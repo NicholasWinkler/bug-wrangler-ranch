@@ -118,11 +118,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > This code is an example of a for loop. This loop is setting the variable forestNumber to zero to initialize it. It is then looking to see how many times the loop will run by looking to see if the forestNumber variable is less than the amount of forests in the areas function. If it is then it adds 1 (incdicated by the ++) to the forestNumber variable. Then the journey.push code adds the forest string to the journey array. 
+   > This code is an example of a for loop. This loop is setting the variable forestNumber to zero to initialize it. It is then looking to see how many times the loop will run by looking to see if the forestNumber variable is less than the amount of forests in the areas function. If it is then it adds 1 (indicated by the ++) to the forestNumber variable. Then the journey.push code adds the forest string to the journey array. 
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
    > The database variable is an object that contains two variables: cattleTypes and drovers. The cattleTypes array contains 2 properties: id and breed. The drovers array contains 4 properties: id, first_name, last_name, and gender. These arrays are all a part of the object of the database variable, and at the end, this variable database is exported so that it can be accessed.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > I have been stuggling with understanding parameters in the entire book 2. I believe that the `(herdSize)` is defining 
+   > I have been struggling with understanding parameters in the entire book 2. I believe that the `(herdSize)` is defining the size of the number of cattle there will be for each cattle driving team.This is found by exporting the hireDrovers function into the main.JS file and then using the cattleToDrive variable number in the hireDrovers function to get the outcome. So the `(herdSize)` Get its value from the cattleToDrive variable.
 
 
 ## Final Step
