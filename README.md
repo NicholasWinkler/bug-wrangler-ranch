@@ -105,12 +105,18 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > The value of the `drovers` variable is 5 when this code runs.
+   > > The value of the drovers variable when this line of code runs is the output of the hireDrovers function with the argument cattleToDrive, which in this case is 50. The hireDrovers function helps to determine how many drovers are needed by taking the heardSize / 10 and in this case the heard size is 50 / 10 so the numberNeeded would be equal to 5. The next step is to randomly select 5 drovers from allDrovers which is a list of all of the drovers and uses the for loop to make the selection randomly. So the value of drovers when the function runs would be an array of 5 randomly selected drovers from the database.drovers array.
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > The value of the `drover` variable is one of the drovers from the list located in the database.js file.
-   > The value of the  `drovers` variable is 5. There are five possible drovers that will get selected out of the entire array of drovers.
+   > In this line of code we have `drovers` which is an array of five of the randomly selected drovers from earlier in the code. Then we have the `drover` which is referring to each individual drover from the drovers array and the for loop iterates over this array to print out the team of drovers.
+
+> The reason it is changing is because the loop is designed to iterate over each element of the drovers array and assigns the current drover object to the drover variable 
+> The purpose of this code is to iterate over each drover object in the drovers array and perform some action for each drover.
+
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > [Your public Loom URL here](https://www.loom.com/share/f1b00a356634437aa719fd45b34291bb?sid=1b444a20-3c2b-4630-9c55-e7aa120d491c)
+   > [Your public Loom URL here] (https://www.loom.com/share/ab975c832ab7412bb5b8787c782d7b81?sid=d1e9efb1-6401-49e4-8367-bc4d972b13bd)
+    
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -118,11 +124,17 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > This code is an example of a for loop. This loop is setting the variable forestNumber to zero to initialize it. It is then looking to see how many times the loop will run by looking to see if the forestNumber variable is less than the amount of forests in the areas function. If it is then it adds 1 (indicated by the ++) to the forestNumber variable. Then the journey.push code adds the forest string to the journey array. 
+   > The value of areas is an object here created in the journeyMaker function. Inside of the areas object it holds the properties of the rivers, forests, mountains, and plains the journey will pass through. Looking at areas.forest this is grabbing the forest property from the areas object. The value of this forest property was assigned in the createForests function. The loop will run as many times as it can as long as the  forestNumber is no longer less than areas.forests. The loop ends when the forestNumber is greater than or equal to  areas.forests.
+ 
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > The database variable is an object that contains two variables: cattleTypes and drovers. The cattleTypes array contains 2 properties: id and breed. The drovers array contains 4 properties: id, first_name, last_name, and gender. These arrays are all a part of the object of the database variable, and at the end, this variable database is exported so that it can be accessed.
+   > The database variable in the database module is an object containing two properties: cattleTypes and drovers. These both properties are both  arrays. The first array is cattleTypes which is  representing a cattle breed with an id and breed. The second array is drovers  array and each has an id, first_name, last_name, and gender.
+
+   > An object is a collection of key-values pairs.
+   > The cattleTypes array within the database object contains objects, each representing a type of cattle.
+   > The drovers array within the database object contains objects.
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > I have been struggling with understanding parameters in the entire book 2. I believe that the `(herdSize)` is defining the size of the number of cattle there will be for each cattle driving team.This is found by exporting the hireDrovers function into the main.JS file and then using the cattleToDrive variable number in the hireDrovers function to get the outcome. So the `(herdSize)` Get its value from the cattleToDrive variable.
+   > I believe that the `(herdSize)` is defining the size of the amount of cattle there will be for each cattle driving team.This is found by exporting the hireDrovers function into the main.JS file and then using the cattleToDrive variable number in the hireDrovers function to get the outcome. So the `(herdSize)` Get its value from the cattleToDrive variable.
 
 
 ## Final Step
