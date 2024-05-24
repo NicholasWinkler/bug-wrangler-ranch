@@ -127,11 +127,12 @@ Your journey will take you through the wildness of the American Midwest and acro
    > The value of areas is an object here created in the journeyMaker function. Inside of the areas object it holds the properties of the rivers, forests, mountains, and plains the journey will pass through. Looking at areas.forest this is grabbing the forest property from the areas object. The value of this forest property was assigned in the createForests function. The loop will run as many times as it can as long as the  forestNumber is no longer less than areas.forests. The loop ends when the forestNumber is greater than or equal to  areas.forests.
  
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > The database variable in the database module is an object containing two properties: cattleTypes and drovers. These both properties are both  arrays. The first array is cattleTypes which is  representing a cattle breed with an id and breed. The second array is drovers  array and each has an id, first_name, last_name, and gender.
-
-   > An object is a collection of key-values pairs.
-   > The cattleTypes array within the database object contains objects, each representing a type of cattle.
-   > The drovers array within the database object contains objects.
+   >The database variable in the database module is an object containing two properties: cattleTypes and drovers. Both of these properties are arrays.
+      >The cattleTypes array represents different cattle breeds, with each breed having an id and a breed name.
+      >The drovers array represents individuals tasked with driving cattle, with each drover having an id, first name, last name, and gender.
+   
+   >An object holds related information, organized as key-value pairs.
+   >The cattleTypes array within the database object contains objects, each representing a specific cattle breed with its corresponding properties. Similarly, the drovers array within the database object contains objects representing individual drovers with their respective details.
 
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
    > I believe that the `(herdSize)` is defining the size of the amount of cattle there will be for each cattle driving team.This is found by exporting the hireDrovers function into the main.JS file and then using the cattleToDrive variable number in the hireDrovers function to get the outcome. So the `(herdSize)` Get its value from the cattleToDrive variable.
